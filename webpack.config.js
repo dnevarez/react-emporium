@@ -26,10 +26,12 @@ module.exports = {
 		, filename: 'bundle.js'
 	}
 	, devServer: {
+		inline: true,
 		contentBase: './dist'
 		, historyApiFallback: true
 		, stats: {
 			colors: true
 		}
-	}
+	},
+	  devtool: 'source-map'
 };
